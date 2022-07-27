@@ -1,0 +1,13 @@
+<!--付帯商品一覧-->
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes" access="global" >
+
+    <!-- lightningページのヘッダを消す -->
+    <ltng:require styles="{!$Resource.external_file + '/external_file/lightningPageNoHeader.css'}"/>
+    
+	<lightning:listView
+    objectApiName="grung__Item__c"
+    listName="grung__AuxiliaryItemRecordTypeAll"
+    showSearchBar="true"
+    showActionBar="true"
+    enableInlineEdit="false"/>
+</aura:component>
